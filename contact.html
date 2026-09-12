@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us — Eden Interior Designers</title>
+<meta name="description" content="Get in touch with Eden Interior Designers in Kilimani, Nairobi. Book a consultation for your hospitality, commercial or residential project.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header is-solid">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Eden Interior Designers logo" width="44" height="44">
+      <span>EDEN<br><small>Interior Designers</small></span>
+    </a>
+    <nav class="nav-primary" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="process.html">Process</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-primary" href="contact.html">Book a Consultation</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" hidden>
+  <div class="mobile-nav-head">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Eden Interior Designers logo" width="40" height="40">
+    </a>
+    <button class="mobile-nav-close" aria-label="Close menu">&times;</button>
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="process.html">Process</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a class="btn btn-primary btn-block" href="contact.html">Book a Consultation</a>
+</div>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Get In Touch</span>
+      <h1>Let's design something amazing together</h1>
+      <p class="lede">Tell us about your project and we'll get back to you within two working days. Prefer to talk first? Call or WhatsApp us directly.</p>
+    </div>
+  </section>
+
+  <section class="section section--white">
+    <div class="container">
+      <div class="split" style="align-items:flex-start;">
+
+        <form data-contact-form novalidate data-reveal>
+          <h2 style="margin-bottom:var(--space-4);">Request a Consultation</h2>
+          <div class="form-status" data-form-status tabindex="-1"></div>
+
+          <div class="grid grid--2">
+            <div class="form-field">
+              <label for="name">Full name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+              <p class="form-error">Please enter your name.</p>
+            </div>
+            <div class="form-field">
+              <label for="email">Email address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <p class="form-error">Please enter a valid email address.</p>
+            </div>
+          </div>
+
+          <div class="grid grid--2">
+            <div class="form-field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel">
+            </div>
+            <div class="form-field">
+              <label for="project-type">Project type <span class="required">*</span></label>
+              <select id="project-type" name="project-type" required>
+                <option value="">Select one</option>
+                <option>Hospitality</option>
+                <option>Office &amp; Commercial</option>
+                <option>Residential</option>
+                <option>3D Visualisation</option>
+                <option>Project Management</option>
+                <option>Other</option>
+              </select>
+              <p class="form-error">Please select a project type.</p>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Tell us about your space <span class="required">*</span></label>
+            <textarea id="message" name="message" required placeholder="Location, size, timeline, budget range — whatever helps us understand your project."></textarea>
+            <p class="form-error">Please tell us a little about your project.</p>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <p class="form-hint">This form isn't wired to an inbox yet — connect it to Formspree, EmailJS, or your own backend before launch. Until then, reach us directly at <a href="mailto:info@edeninteriordesigners.com" style="color:var(--c-green);font-weight:600;">info@edeninteriordesigners.com</a>.</p>
+        </form>
+
+        <div data-reveal>
+          <div class="contact-card">
+            <h3>Contact Details</h3>
+            <div class="contact-row">
+              <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div><b>Phone / WhatsApp</b><a href="tel:+254718772310" class="val">+254 718 77 23 10</a></div>
+            </div>
+            <div class="contact-row">
+              <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+              <div><b>Email</b><a href="mailto:info@edeninteriordesigners.com" class="val">info@edeninteriordesigners.com</a></div>
+            </div>
+            <div class="contact-row">
+              <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div><b>Studio</b><span class="val">Eagle House, Kilimani Road, 1st Floor, Nairobi</span></div>
+            </div>
+            <div class="social-row">
+              <a href="https://instagram.com/edeninteriordesigners" aria-label="Eden Interior Designers on Instagram" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+              </a>
+              <a href="https://facebook.com/edeninteriordesigners" aria-label="Eden Interior Designers on Facebook" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 8h2V5h-2a4 4 0 0 0-4 4v2H9v3h2v7h3v-7h2.5l.5-3H14V9a1 1 0 0 1 1-1z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="map-embed" style="margin-top:var(--space-5);">
+            <iframe title="Map showing Eagle House, Kilimani Road, Nairobi" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Eagle+House+Kilimani+Road+Nairobi&output=embed"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="" width="40" height="40">
+          <span>Eden Interior Designers</span>
+        </div>
+        <p class="lede">Every room deserves to be amazing. Hospitality, commercial and residential interior design based in Nairobi, Kenya.</p>
+        <div class="social-row">
+          <a href="https://instagram.com/edeninteriordesigners" aria-label="Eden Interior Designers on Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="https://facebook.com/edeninteriordesigners" aria-label="Eden Interior Designers on Facebook" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 8h2V5h-2a4 4 0 0 0-4 4v2H9v3h2v7h3v-7h2.5l.5-3H14V9a1 1 0 0 1 1-1z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="process.html">Our Process</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#hospitality">Hospitality Design</a></li>
+          <li><a href="services.html#commercial">Office &amp; Commercial</a></li>
+          <li><a href="services.html#residential">Residential Design</a></li>
+          <li><a href="services.html#visualisation">3D Visualisation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+254718772310">+254 718 77 23 10</a></li>
+          <li><a href="mailto:info@edeninteriordesigners.com">info@edeninteriordesigners.com</a></li>
+          <li><span>Eagle House, Kilimani Road, 1st Floor, Nairobi</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year></span> Eden Interior Designers. All rights reserved.</span>
+      <span>Designed for a studio that believes every room deserves to be amazing.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
