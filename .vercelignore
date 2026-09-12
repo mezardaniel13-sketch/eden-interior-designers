@@ -1,9 +1,5 @@
-# Source materials not part of the deployed website
 Eden Interiors Company Profile 2026.pdf
 edenprofiles.zip
 Some Work.rar
-
-# Local tooling
 .claude/
-
-.vercel
+.git/

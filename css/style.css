@@ -723,7 +723,8 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.55rem); }
   font-size: 0.85rem;
   padding: 0.5rem 0.9rem;
   border-radius: 999px;
-  background: var(--c-cream-deep);
+  background: var(--c-white);
+  border: 1px solid var(--c-border);
   color: var(--c-ink-soft);
 }
 .section--dark .tag-list li { background: rgba(244,237,225,0.1); color: var(--c-on-dark-soft); }
