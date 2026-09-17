@@ -163,6 +163,31 @@
   var form = document.querySelector("[data-contact-form]");
   if (form) {
     var statusBox = form.querySelector("[data-form-status]");
+
+    var productParam = new URLSearchParams(window.location.search).get("product");
+    if (productParam) {
+      var messageField = form.querySelector("#message");
+      var projectTypeField = form.querySelector("#project-type");
+      if (messageField) {
+        messageField.value = "I'm interested in ordering: " + productParam + " from the Eden Hospitality Collection.";
+      }
+      if (projectTypeField) {
+        var hasOption = Array.prototype.some.call(projectTypeField.options, function (o) {
+          return o.value === "Hospitality Products";
+        });
+        if (hasOption) projectTypeField.value = "Hospitality Products";
+      }
+      if (statusBox) {
+        statusBox.textContent = "Enquiring about " + productParam + " — fill in your details below and we'll get back to you within two working days.";
+        statusBox.className = "form-status is-info";
+      }
+      window.setTimeout(function () {
+        form.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
+        var nameField = form.querySelector("#name");
+        if (nameField) nameField.focus();
+      }, 50);
+    }
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var valid = true;
