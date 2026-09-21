@@ -555,17 +555,6 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.55rem); }
   gap: var(--space-4);
   position: relative;
 }
-.process-phases::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  height: 2px;
-  background: var(--c-border-dark);
-  transform: translateY(-50%);
-  z-index: 0;
-}
 .process-phase {
   flex: 1;
   min-width: 0;
@@ -633,13 +622,14 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.55rem); }
     padding-left: var(--space-5);
   }
   .process-phases::before {
+    content: "";
+    position: absolute;
     left: 7px;
-    right: auto;
     top: 0;
     bottom: 0;
     width: 2px;
-    height: auto;
-    transform: none;
+    background: var(--c-border-dark);
+    z-index: 0;
   }
   .process-phase {
     flex-direction: column;
