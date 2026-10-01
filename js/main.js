@@ -159,10 +159,11 @@
     });
   });
 
-  /* ---------- Contact form (client-side validation, no backend wired) ---------- */
+  /* ---------- Contact form ---------- */
   var form = document.querySelector("[data-contact-form]");
   if (form) {
     var statusBox = form.querySelector("[data-form-status]");
+    var submitBtn = form.querySelector("[data-submit-btn]");
 
     var productParam = new URLSearchParams(window.location.search).get("product");
     if (productParam) {
@@ -206,14 +207,52 @@
       if (!valid) {
         statusBox.textContent = "Please fill in the highlighted fields correctly.";
         statusBox.className = "form-status is-error";
+        statusBox.setAttribute("tabindex", "-1");
         statusBox.focus();
         return;
       }
-      statusBox.textContent =
-        "Thanks — your message is ready to send. This form isn't connected to an inbox yet; please email info@edeninteriordesigners.com directly, or wire this form up to a service like Formspree.";
-      statusBox.className = "form-status is-success";
-      statusBox.setAttribute("tabindex", "-1");
-      statusBox.focus();
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending…";
+      }
+
+      fetch(form.getAttribute("action"), {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      })
+        .then(function (res) {
+          return res.json().catch(function () { return {}; }).then(function (data) {
+            return { ok: res.ok, data: data };
+          });
+        })
+        .then(function (result) {
+          if (result.ok && result.data.success) {
+            statusBox.textContent =
+              "Thanks — your message has been sent. We'll get back to you within two working days.";
+            statusBox.className = "form-status is-success";
+            form.reset();
+          } else {
+            statusBox.textContent =
+              (result.data && result.data.message) ||
+              "Something went wrong sending your message. Please email connect@edeninteriordesigners.com directly.";
+            statusBox.className = "form-status is-error";
+          }
+        })
+        .catch(function () {
+          statusBox.textContent =
+            "Something went wrong sending your message. Please email connect@edeninteriordesigners.com directly.";
+          statusBox.className = "form-status is-error";
+        })
+        .finally(function () {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Send Message";
+          }
+          statusBox.setAttribute("tabindex", "-1");
+          statusBox.focus();
+        });
     });
   }
 

@@ -5,11 +5,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact Us — Eden Interior Designers</title>
 <meta name="description" content="Get in touch with Eden Interior Designers in Kilimani, Nairobi. Book a consultation for your hospitality, commercial or residential project.">
-<link rel="icon" href="assets/logo.png">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" href="/assets/favicon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/favicon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=2">
+<link rel="canonical" href="https://edeninteriordesigners.com/contact.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Eden Interior Designers",
+  "image": "https://edeninteriordesigners.com/assets/logo.png",
+  "url": "https://edeninteriordesigners.com/",
+  "telephone": "+254718772310",
+  "email": "connect@edeninteriordesigners.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Eagle House, Kilimani Road, 1st Floor",
+    "addressLocality": "Nairobi",
+    "addressCountry": "KE"
+  },
+  "sameAs": [
+    "https://instagram.com/edeninteriordesigners",
+    "https://facebook.com/edeninteriordesigners"
+  ],
+  "description": "Nairobi-based hospitality, commercial and residential interior design studio."
+}
+</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -59,21 +84,19 @@
 
 <main id="main">
 
-  <section class="page-hero">
-    <div class="container">
-      <span class="eyebrow">Get In Touch</span>
-      <h1>Let's design something amazing together</h1>
-      <p class="lede">Tell us about your project and we'll get back to you within two working days. Prefer to talk first? Call or WhatsApp us directly.</p>
-    </div>
-  </section>
-
-  <section class="section section--white">
+  <section class="section section--white" style="padding-top:var(--space-9);">
     <div class="container">
       <div class="split" style="align-items:flex-start;">
 
-        <form data-contact-form novalidate data-reveal>
-          <h2 style="margin-bottom:var(--space-4);">Request a Consultation</h2>
+        <form data-contact-form novalidate data-reveal action="https://formsubmit.co/ajax/connect@edeninteriordesigners.com" method="POST">
+          <span class="eyebrow">Get In Touch</span>
+          <h1 style="margin-bottom:var(--space-4);">Request a Consultation</h1>
+          <p class="lede" style="margin-bottom:var(--space-4);">Tell us about your project and we'll get back to you within two working days. Prefer to talk first? Call or WhatsApp us directly.</p>
           <div class="form-status" data-form-status tabindex="-1"></div>
+          <input type="hidden" name="_subject" value="New website enquiry — Eden Interior Designers">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
 
           <div class="grid grid--2">
             <div class="form-field">
@@ -115,8 +138,8 @@
             <p class="form-error">Please tell us a little about your project.</p>
           </div>
 
-          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-          <p class="form-hint">This form isn't wired to an inbox yet — connect it to Formspree, EmailJS, or your own backend before launch. Until then, reach us directly at <a href="mailto:info@edeninteriordesigners.com" style="color:var(--c-green);font-weight:600;">info@edeninteriordesigners.com</a>.</p>
+          <button type="submit" class="btn btn-primary btn-block" data-submit-btn>Send Message</button>
+          <p class="form-hint">Prefer email? Reach us directly at <a href="mailto:connect@edeninteriordesigners.com" style="color:var(--c-green);font-weight:600;">connect@edeninteriordesigners.com</a>.</p>
         </form>
 
         <div data-reveal>
@@ -128,7 +151,7 @@
             </div>
             <div class="contact-row">
               <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
-              <div><b>Email</b><a href="mailto:info@edeninteriordesigners.com" class="val">info@edeninteriordesigners.com</a></div>
+              <div><b>Email</b><a href="mailto:connect@edeninteriordesigners.com" class="val">connect@edeninteriordesigners.com</a></div>
             </div>
             <div class="contact-row">
               <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -196,7 +219,7 @@
         <h4>Contact</h4>
         <ul>
           <li><a href="tel:+254718772310">+254 718 77 23 10</a></li>
-          <li><a href="mailto:info@edeninteriordesigners.com">info@edeninteriordesigners.com</a></li>
+          <li><a href="mailto:connect@edeninteriordesigners.com">connect@edeninteriordesigners.com</a></li>
           <li><span>Eagle House, Kilimani Road, 1st Floor, Nairobi</span></li>
         </ul>
       </div>
@@ -208,6 +231,11 @@
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<a class="whatsapp-float" href="https://wa.me/254718772310?text=Hi%20Eden%20Interior%20Designers%2C%20I%27d%20like%20to%20find%20out%20more%20about%20your%20services." target="_blank" rel="noopener" aria-label="Chat with Eden Interior Designers on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M20.52 3.449C12.831-3.984.106 1.407.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652a11.85 11.85 0 0 0 5.723 1.47h.005c9.65 0 14.531-11.665 8.06-18.339zM12.06 21.858h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.981.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.238c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.822 9.822 0 0 1 2.893 6.994c-.003 5.45-4.437 9.863-9.885 9.863z"/></svg>
+  <span>WhatsApp us</span>
+</a>
+
+<script src="js/main.js?v=2"></script>
 </body>
 </html>
