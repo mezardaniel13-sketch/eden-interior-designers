@@ -962,3 +962,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.55rem); }
   text-align: center;
   margin-top: var(--space-3);
 }
+
+/* SEO: homepage H1 carries the keyword + city in the hero tag; the slogan keeps the headline look */
+.hero-content h1.hero-tag { font-family: inherit; font-weight: inherit; line-height: inherit; color: inherit; }
+.hero-content .hero-title { font-family: var(--font-display); font-size: clamp(2.4rem, 5vw, 4.2rem); letter-spacing: -0.01em; line-height: 1.15; font-weight: 600; color: var(--c-white); margin: 0 0 var(--space-4); }
