@@ -228,7 +228,8 @@
           });
         })
         .then(function (result) {
-          if (result.ok && result.data.success) {
+          var sent = result.data && (result.data.success === true || result.data.success === "true");
+          if (result.ok && sent) {
             statusBox.textContent =
               "Thanks — your message has been sent. We'll get back to you within two working days.";
             statusBox.className = "form-status is-success";
